@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/user.png" type="image/x-icon">
+    <title>Jahnavi Peddineni</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d0e8ff; /* Light blue background */
+            color: #333;
+        }
+
+        header {
+            background-color: #1e2a38;
+            color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        #home h1 {
+            color: #3a0a6e;
+            font-size: 2.5em;
+        }
+
+        #home em {
+            color: #7d8c8d;
+            font-size: 1.2em;
+        }
+
+        .line {
+            width: 60px;
+            height: 3px;
+            background-color: #3a0a6e;
+            margin: 20px auto;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .education, .professional-interests {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .details {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .details h3 {
+            color: #3a0a6e;
+            font-size: 1.4em;
+            margin: 0;
+        }
+
+        .details p {
+            color: #4a5c6e;
+        }
+
+        .link {
+            text-align: right;
+            padding: 15px;
+        }
+
+        .link a {
+            color: #3a0a6e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #3a0a6e;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #2c0047;
+        }
+
+        footer {
+            background-color: #1e2a38;
+            color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Jahnavi Peddineni</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Hello there! 🌟 I am <span style="color: #3a0a6e;">Jahnavi Peddineni</span>.</h1>
+        <em>Dedicated Software Developer. Driven to Learn, Innovate, and Create Meaningful Solutions.</em>
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="line"></div>
+        <article><em>I am Jahnavi, a committed AI developer currently in my 4th year of studies. I have a strong interest in machine learning and artificial intelligence, focusing on innovative solutions. My experience includes various AI-related projects, such as handwriting character recognition. I am enthusiastic about exploring new technologies and tackling challenging projects to advance my skills.</em></article>
+        <div class="flex">
+            <div class="education">
+                <h2>Education</h2>
+                <div class="line"></div>
+                <table>
+                    <tr>
+                        <td>2019 - Present</td>
+                        <td>B.Tech, CSE</td>
+                        <td>Vignan's University, Vadlamudi</td>
+                    </tr>
+                    <tr>
+                        <td>2017 - 2019</td>
+                        <td>Intermediate</td>
+                        <td>Sri Chaitanya Junior College, Vijayawada</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>SSC</td>
+                        <td>Sri Chaitanya School, Nuzvid</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="professional-interests">
+                <h2>Professional Interests</h2>
+                <div class="line"></div>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="line"></div>
+        <article><em>Here are some of the projects that I have worked on:</em></article>
+        <div class="projects">
+            <div class="project">
+                <div class="img">
+                    <img src="C:\Users\Jahnavi\OneDrive\Desktop\port\Attendence.png" alt="Efficient attendance management system for tracking and monitoring student participation.">
+                </div>
+                <div class="details">
+                    <h3>An advanced attendance portal designed for seamless tracking and monitoring of student participation.</h3>
+                    <p>Streamlines record-keeping and enhances administrative efficiency with real-time data access.</p>
+                </div>
+                <div class="link">
+                    <a target="_blank" href="https://github.com/sakshamhere/Automated-Attendance-System-By-Real-Time-Face-Reccognition">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img">
+                    <img src="C:\Users\Jahnavi\OneDrive\Desktop\port\Hand writing.png" alt="AI-driven handwriting character recognition system.">
+                </div>
+                <div class="details">
+                    <h3>Developed an AI-driven handwriting character recognition system to accurately interpret and digitize handwritten text.</h3>
+                    <p>The project leverages advanced machine learning techniques to enhance recognition accuracy and adapt to diverse handwriting styles.</p>
+                </div>
+                <div class="link">
+                    <a target="_blank" href="https://github.com/githubharald/SimpleHTR">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="img">
+                    <img src="C:\Users\Jahnavi\OneDrive\Desktop\port\Brain.png" alt="Brain tumor detection system using advanced imaging and machine learning techniques.">
+                </div>
+                <div class="details">
+                    <h3>Created a cutting-edge project for brain tumor detection using advanced imaging and machine learning techniques.</h3>
+                    <p>Designed to enhance diagnostic accuracy and support medical professionals in patient care.</p>
+                </div>
+                <div class="link">
+                    <a target="_blank" href="https://github.com/MohamedAliHabib/Brain-Tumor-Detection">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="line"></div>
+        <article><em>Feel free to reach out to me for any queries or opportunities:</em></article>
+        <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jahnavi Peddineni. All Rights Reserved.</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/jahnavi-peddineni-0638192ba/" target="_blank">LinkedIn</a>.</p>
+    </footer>
+</body>
